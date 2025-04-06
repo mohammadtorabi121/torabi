@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آزمایش جامع خوش‌گُویی</title>
+    <style>
+        body {
+            font-family: "Vazirmatn", sans-serif;
+            background-color: #f7f4ef;
+            color: #333;
+            padding: 2rem;
+            direction: rtl;
+        }
+        h1 {
+            color: #ab47bc;
+        }
+        section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin: 0.5rem 0;
+        }
+        button {
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            background-color: #ab47bc;
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #e1bee7;
+            border-radius: 1rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 آزمایش جامع خوش‌گُویی</h1>
+
+    <form id="quizForm">
+        <section>
+            <h2>🗣️ خوش‌گُویی درباره دیگران</h2>
+            <label>
+                1. آیا تا به حال کسی را به خاطر ظاهر یا لهجه‌اش مسخره کرده‌اید؟<br>
+                <input type="radio" name="q1" value="0"> بله، چند بار پیش آمده<br>
+                <input type="radio" name="q1" value="1"> فقط در شوخی‌های جمعی<br>
+                <input type="radio" name="q1" value="2"> نه، همیشه مراقب حرف‌زدنم هستم
+            </label>
+            <label>
+                2. در جمع‌های خانوادگی یا دوستانه چقدر اهل غیبت هستید؟<br>
+                <input type="radio" name="q2" value="0"> زیاد<br>
+                <input type="radio" name="q2" value="1"> گاهی اوقات<br>
+                <input type="radio" name="q2" value="2"> خیلی کم یا اصلاً
+            </label>
+            <label>
+                3. وقتی کسی ناراحتت می‌کند، چه واکنشی داری؟<br>
+                <input type="radio" name="q3" value="0"> بگو مگو می‌کنم یا دعوا می‌گیرم<br>
+                <input type="radio" name="q3" value="1"> سعی می‌کنم کنترل کنم ولی بعضی وقتا خشمگین می‌شم<br>
+                <input type="radio" name="q3" value="2"> آرام و مؤدبانه بیان می‌کنم
+            </label>
+        </section>
+
+        <section>
+            <h2>🔍 خوش‌گُویی در شناخت و اصلاح زبان</h2>
+            <label>
+                4. چقدر درباره گناهان زبان (مثل دروغ، تهمت، غیبت) مطالعه یا فکر کرده‌ای؟<br>
+                <input type="radio" name="q4" value="0"> تقریباً هیچ‌وقت<br>
+                <input type="radio" name="q4" value="1"> گاهی وقتا بهش فکر کردم<br>
+                <input type="radio" name="q4" value="2"> بله، سعی می‌کنم مراقب باشم و اصلاح کنم
+            </label>
+            <label>
+                5. وقتی کسی پشت سرت حرف بزنه، واکنشت چیه؟<br>
+                <input type="radio" name="q5" value="0"> سریع مقابله می‌کنم و جواب می‌دم<br>
+                <input type="radio" name="q5" value="1"> ناراحت می‌شم ولی چیزی نمی‌گم<br>
+                <input type="radio" name="q5" value="2"> می‌سپرم به خدا و خودمو درگیر نمی‌کنم
+            </label>
+            <label>
+                6. آیا تا به حال تلاش کردی اشتباه کلامی‌ات رو جبران کنی؟<br>
+                <input type="radio" name="q6" value="0"> نه، زیاد جدی نگرفتم<br>
+                <input type="radio" name="q6" value="1"> بعضی وقتا بله<br>
+                <input type="radio" name="q6" value="2"> بله، همیشه سعی می‌کنم دلجویی کنم
+            </label>
+        </section>
+
+        <section>
+            <h2>☁️ خوش‌گُویی درباره اتفاقات و تقدیر الهی</h2>
+            <label>
+                7. وقتی اتفاق بدی برات می‌افته، اولین واکنشت چیه؟<br>
+                <input type="radio" name="q7" value="0"> گله و شکایت می‌کنم<br>
+                <input type="radio" name="q7" value="1"> ناراحت می‌شم ولی ساکت می‌مونم<br>
+                <input type="radio" name="q7" value="2"> سعی می‌کنم به حکمتش فکر کنم
+            </label>
+            <label>
+                8. آیا در دلِ سختی‌ها باز هم از خدا با مهربونی حرف می‌زنی؟<br>
+                <input type="radio" name="q8" value="0"> نه، نمی‌تونم تحمل کنم<br>
+                <input type="radio" name="q8" value="1"> بستگی داره به شدت سختی<br>
+                <input type="radio" name="q8" value="2"> بله، خدا رو همیشه دوست دارم حتی وقتی سخته
+            </label>
+            <label>
+                9. چقدر سعی می‌کنی موقع ناراحتی هم با دیگران مودب و مهربون باشی؟<br>
+                <input type="radio" name="q9" value="0"> اصلاً نمی‌تونم<br>
+                <input type="radio" name="q9" value="1"> سعی می‌کنم ولی سخت می‌شه<br>
+                <input type="radio" name="q9" value="2"> بله، تمرین می‌کنم که در هر حالتی خوش‌گو باشم
+            </label>
+        </section>
+
+        <button type="button" onclick="calculateResult()">نتیجه منو ببین</button>
+        <div class="result" id="result"></div>
+    </form>
+
+    <script>
+        function calculateResult() {
+            const form = document.forms["quizForm"];
+            let total = 0;
+            for (let i = 1; i <= 9; i++) {
+                const answer = form[`q${i}`].value;
+                total += parseInt(answer);
+            }
+
+            let message = "";
+            if (total <= 9) {
+                message = "😬 هنوز اول راه خوش‌گُویی هستی. خوبه که الان آگاه شدی!";
+            } else if (total <= 14) {
+                message = "😊 در مسیر خوش‌گُویی هستی، فقط کمی تمرین بیشتر می‌خواد!";
+            } else {
+                message = "🌟 تو یه خوش‌گوی واقعی‌ای! دنیا به آدمایی مثل تو نیاز داره.";
+            }
+            document.getElementById("result").innerText = message;
+        }
+    </script>
+</body>
+</html>
